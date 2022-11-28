@@ -4,6 +4,7 @@ metadata:
   name: {{ .Release.Name }}-config
 data:
   myvalue: "Hello World"
+  testvalue: "Hello World"
   # drink: {{ .Values.favorite.drink }}
   # food: {{ .Values.favorite.food }}
   # drink: {{ quote .Values.favorite.drink }}
