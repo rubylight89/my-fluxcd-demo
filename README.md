@@ -7,3 +7,5 @@ flux create secret git podinfo-auth \
     --private-key-file=./private.key
 
 
+flux logs -A --follow
+ flux reconcile kustomization flux-system -n flux-system
