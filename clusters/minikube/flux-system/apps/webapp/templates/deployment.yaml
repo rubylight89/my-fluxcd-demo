@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: {{ .Values.label }}
-  name: {{ .Release.Name }}-deploy
+  name: {{ .Release.Name }}-deployaaa
 spec:
   replicas: 1
   selector:
