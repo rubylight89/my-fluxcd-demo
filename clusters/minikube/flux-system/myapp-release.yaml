@@ -1,15 +1,15 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: myapp
+  name: alpine
   namespace: flux-system
 spec:
   chart:
     spec:
-      chart: ./apps/mychart
+      chart: https://example.com/charts/alpine-0.1.2.tgz
       sourceRef:
         kind: GitRepository
-        name: flux-system
+        name: alpine
   interval: 1m0s
   install:
     createNamespace: true
